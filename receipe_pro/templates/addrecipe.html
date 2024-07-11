@@ -77,11 +77,11 @@ body{
           {% for item in user_data%}
           
             
-          <div class="card m-3 p-3" style="width: 25rem; height: 40rem; ">
+          <div class="card m-3 p-3" style="width: 25rem; ">
             <div class="card-body">
               <h6>[{{item.pk}}] {{item.recipe_user_name}}</h6>
-              <img class="card-img-top img fluid" src="{{item.recipe_image.url}}" alt="card_iamge">
-              <div style="width: 20rem; height: 12rem;">
+              <img class="card-img-top img fluid" src="{{item.recipe_image.url}}" alt="card_iamge" style="height: 300px; width: 20rem;">
+              <div style="width: 20rem; height: 16rem; ">
               <h5 class="card-title">{{forloop.counter}}.{{item.recipe_name}}</h5>
               
               <p class="card-text">{{item.recipe_description}}click here for more ->>
